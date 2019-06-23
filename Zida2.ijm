@@ -3,7 +3,8 @@
  * 20190623 ZIDAS2019
  */
 
-
+dirPath = getDirectory("Choose a directory");
+outputfilepath = dirPath + "Results.csv"
 run("HeLa Cells (1.3M, 48-bit RGB)");
 run("Split Channels");
 run("Auto Threshold", "method=MaxEntropy white");
